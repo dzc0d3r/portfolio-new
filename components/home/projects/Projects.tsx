@@ -20,10 +20,64 @@ export const Projects = () => {
 
 const projects = [
   {
+    title: "YoSell",
+    imgSrc: "/project-imgs/yosell.png",
+    projectLink: "https://yosell.app",
+    tech: ["Next.js", "NestJS", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Vercel"],
+    description:
+      "#1 E-commerce platform in Algeria — launch a store in minutes, confirm orders faster, and manage delivery with COD-ready checkout.",
+    modalContent: (
+      <>
+        <p>
+          YoSell is a full-stack e-commerce platform built for the Algerian market, enabling sellers to launch online stores with Cash on Delivery (COD) support, buyer confirmation flows, and delivery route management.
+        </p>
+        <p>
+          Features include storefront previews, COD-ready checkout, buyer confidence signals (verified buyer, COD payment, delivery assigned), and a dashboard to manage orders across wilayas like Algiers, Oran, and Constantine.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "Mirador",
+    imgSrc: "/project-imgs/mirador.png",
+    projectLink: "http://laravel.mirador.lu/",
+    tech: ["Laravel", "React", "TypeScript", "Tailwind CSS", "MySQL"],
+    description:
+      "Restaurant and event venue website in Luxembourg — table reservations, event bookings, menu management, and an admin panel.",
+    modalContent: (
+      <>
+        <p>
+          Mirador is a full-stack web application for a restaurant and terrace venue in Luxembourg. It features table reservations, event booking, a digital menu, and an agenda for upcoming events.
+        </p>
+        <p>
+          Built with Laravel on the backend and React on the frontend. Includes an admin panel at laravel.mirador.lu/admin for managing reservations, menu items, events, and venue spaces.
+        </p>
+      </>
+    ),
+  },
+  {
+    title: "WavyCloud",
+    imgSrc: "/project-imgs/wavycloud.png",
+    projectLink: "https://wavycloud.com/en",
+    tech: ["Next.js", "Express.js", "TypeScript", "Tailwind CSS", "AI", "WhatsApp API"],
+    description:
+      "AI-powered phone assistant for contractors — answers calls in English, captures job details, and sends them to you via WhatsApp.",
+    modalContent: (
+      <>
+        <p>
+          WavyCloud is an AI phone assistant built for contractors who can&apos;t answer every call. It answers in English (and Spanish), captures the job details using AI, and sends them straight to your WhatsApp — 24/7, with a 300ms response time.
+        </p>
+        <p>
+          Built as a freelance gig. The platform features a landing page with pricing, service management, user authentication, and WhatsApp integration for real-time job lead delivery.
+        </p>
+      </>
+    ),
+  },
+  {
     title: "Innerspace",
     imgSrc: "/project-imgs/innerspace.png",
     code: "https://github.com/202306-NEA-DZ-FEW/online-Therapist/",
-    projectLink: "https://innerspace.codewithwalid.pro",
+    projectLink: "https://innerspace.vercel.app/",
     tech: ["React", "Nextjs", "Tailwind", "Firebase", "Framer Motion", "Stripe", "Sanity", "Jest", "Github Actions", "Eslint", "Vercel"],
     description:
       "Bridge the gap to mental well-being – A therapy website connects patients with experienced therapists for personalized and confidential support.",
@@ -43,7 +97,7 @@ const projects = [
     title: "MoviPlaza",
     imgSrc: "/project-imgs/moviplaza.png",
     code: "https://github.com/202306-NEA-DZ-FEW/movie-project-team_404/",
-    projectLink: "https://moviplaza.codewithwalid.pro",
+    projectLink: "https://movie-project-team-404.vercel.app/",
     tech: ["React", "Next", "Tailwind", "DaisyUI", "TmDB API", "Eslint", "Prettier", "commitlint", "Vercel"],
     description:
       "Unlock a world of movies and TV shows online with our TMDB API-powered website for seamless discovery and enjoyment.",
@@ -78,25 +132,6 @@ const projects = [
           Embark on a seamless shopping journey at eBuy, where Next.js, Redux, and a dynamic API converge for a modern and personalized experience. Explore the future of online retail with cutting-edge technology at your fingertips!
         </p>
         <p>Like moviplaza we had only one week and the team in total consists of 5 developers. i mainly worked on cart page the global state using redux/rtk</p>
-      </>
-    ),
-  },
-  {
-    title: "PyNotes",
-    imgSrc: "/project-imgs/pynotes.png",
-    code: "https://www.github.com/dzc0d3r/pynotes",
-    projectLink: "https://pynotes.codewithwalid.pro",
-    tech: ["Python", "mkdocs", "mkdocs-material", "mkdocs-static-i18n", "Github Actions"],
-    description:
-      "Elevate your Python programming skills with our intuitive documentation hub.",
-    modalContent: (
-      <>
-        <p>
-          This is a self project that i made to share python tutorials, projects, and tips while learning python and becoming a pythoneer.
-        </p>
-        <p>
-          I wrote some tutorials and integrated translation into arabic too, while the project seems straight forward it needs more work especialy for the translation and content creation.
-        </p>
       </>
     ),
   },

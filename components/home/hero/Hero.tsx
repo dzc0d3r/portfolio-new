@@ -20,12 +20,12 @@ export const Hero = () => {
           </Reveal>
           <Reveal>
             <h2 className={styles.subTitle}>
-              I&apos;m a <span>Frontend Developer</span>
+              I&apos;m a <span>Fullstack Developer</span>
             </h2>
           </Reveal>
           <Reveal>
             <p className={styles.aboutCopy}>
-              In the past 5 years, I transitioned from a military background into the tech industry, leveraging self-learning into freelancing to build and scale applications for clients. I&apos;ve also dedicated time to intriguing personal projects. Let&apos;s connect!
+              In the past 6 years, I transitioned from a military background into the tech industry, leveraging self-learning into freelancing to build and scale applications for clients. I&apos;ve also dedicated time to intriguing personal projects. Let&apos;s connect!
             </p>
           </Reveal>
           <Reveal>
@@ -44,7 +44,7 @@ export const Hero = () => {
             className={styles.profile}
             src={Profile}
             priority
-            alt="Walid Lamraoui | Frontend Developer"
+            alt="Walid Lamraoui | Fullstack Developer"
             width={250}
             height={250}
           />

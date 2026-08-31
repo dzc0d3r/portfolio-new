@@ -2,6 +2,7 @@
 
 import styles from "./projectmodal.module.scss";
 import { useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
@@ -13,7 +14,7 @@ interface Props {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   title: string;
   imgSrc: string;
-  code: string;
+  code?: string;
   projectLink: string;
   tech: string[];
   modalContent: React.ReactNode;
@@ -43,7 +44,7 @@ export const ProjectModal = ({
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div className={styles.modal} onClick={() => setIsOpen(false)}>
       <button className={styles.closeModalBtn}>
         <MdClose />
@@ -75,9 +76,11 @@ export const ProjectModal = ({
               Project Links<span>.</span>
             </p>
             <div className={styles.links}>
-              <Link target="_blank" rel="nofollow" href={code}>
-                <AiFillGithub /> source code
-              </Link>
+              {code && (
+                <Link target="_blank" rel="nofollow" href={code}>
+                  <AiFillGithub /> source code
+                </Link>
+              )}
               <Link target="_blank" rel="nofollow" href={projectLink}>
                 <AiOutlineExport /> live project
               </Link>
@@ -85,6 +88,7 @@ export const ProjectModal = ({
           </div>
         </div>
       </motion.div>
-    </div>
+    </div>,
+    document.body
   );
 };
