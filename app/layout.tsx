@@ -9,11 +9,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Walid Lamraoui | Frontend Developer",
+  title: "Walid Lamraoui | Fullstack Developer",
   description:
     "Hey! I'm Walid Lamraoui, and I'm a Frontend developer, Open Source enthusiast, and Poet.",
   openGraph: {
-    title: "Walid Lamraoui | Frontend Developer",
+    title: "Walid Lamraoui | Fullstack Developer",
     type: "article",
     url: "https://codewithwalid.pro/",
     images: ["https://codewithwalid.pro/screenshot.png"],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     site: "@dzc0d3r",
-    title: "Walid Lamraoui | Frontend Developer",
+    title: "Walid Lamraoui | Fullstack Developer",
     description:
       "Hey! I'm Walid Lamraoui, and I'm a Frontend developer, Open Source enthusiast, and Poet.",
     creator: "@dzc0d3r",

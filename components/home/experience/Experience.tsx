@@ -44,6 +44,20 @@ const experience = [
     tech: ["Python", "Pywebview", "React", "Typesript", "Git", "Github"],
   },
   {
+    title: "HTCompass",
+    position: "Frontend Developer",
+    time: "Oct. 2023 - Nov. 2024",
+    location: "",
+    description:
+      [
+        "Developed and maintained user-friendly, responsive web applications to enhance user experience",
+        "Collaborated with cross-functional teams to design and implement scalable frontend solutions using React/Next.js",
+        "Optimized application performance and ensured adherence to best practices for web accessibility and SEO",
+        "Regularly updated and enhanced frontend features based on user feedback and evolving project requirements",
+      ],
+    tech: ["React", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS", "Git"],
+  },
+  {
     title: "Freelance",
     position: "Web Developer",
     time: "2023 - Present",
